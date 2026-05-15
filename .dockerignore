@@ -2,7 +2,7 @@
 .git
 node_modules
 data
-config.json
+#config.json
 *.db
 *.db-shm
 *.db-wal
