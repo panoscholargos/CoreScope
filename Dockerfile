@@ -83,6 +83,4 @@ RUN chmod +x /entrypoint.sh
 
 EXPOSE 80 443 1883
 
-VOLUME ["/app/data", "/data/caddy"]
-
 ENTRYPOINT ["/entrypoint.sh"]
