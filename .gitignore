@@ -3,7 +3,6 @@ data/
 *.bak
 *.db
 *.db-journal
-config.json
 .env
 data-lincomatic/
 config-lincomatic.json
