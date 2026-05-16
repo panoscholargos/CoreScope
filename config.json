@@ -5,7 +5,7 @@
     "Public": "8b3387e9c5cdea6ac9e5edbaa115cd72",
     "#athens": "69ab9c88a289e196c0c58c5e06302b2c"
   },
-  "hashChannels": ["#athens", "#test"],
+  "hashChannels": [],
   "defaultRegion": "ATH",
   "mapDefaults": {
     "center": [37.9838, 23.7275],
