@@ -19,11 +19,111 @@
     "HER": "Heraklion",
     "SKG": "Thessaloniki"
   },
+  "observerIATAWhitelist": ["ATH", "KLX", "CHQ", "JSH", "HER", "SKG"],
   "mqttSources": [
     {
-      "name": "local",
+      "name": "mqtt_ath",
       "broker": "mqtt://localhost:1883",
-      "topics": ["meshcore/+/+/packets", "meshcore/#"]
+      "region": "ATH",
+      "iataFilter": ["ATH"],
+      "topics": ["meshcore/ATH/+/packets", "meshcore/ATH/#"]
+    },
+    {
+      "name": "mqtt_skg",
+      "broker": "mqtt://localhost:1883",
+      "region": "SKG",
+      "iataFilter": ["SKG"],
+      "topics": ["meshcore/SKG/+/packets", "meshcore/SKG/#"]
+    },
+    {
+      "name": "mqtt_her",
+      "broker": "mqtt://localhost:1883",
+      "region": "HER",
+      "iataFilter": ["HER"],
+      "topics": ["meshcore/HER/+/packets", "meshcore/HER/#"]
+    },
+    {
+      "name": "mqtt_klx",
+      "broker": "mqtt://localhost:1883",
+      "region": "KLX",
+      "iataFilter": ["KLX"],
+      "topics": ["meshcore/KLX/+/packets", "meshcore/KLX/#"]
+    },
+    {
+      "name": "mqtt_chq",
+      "broker": "mqtt://localhost:1883",
+      "region": "CHQ",
+      "iataFilter": ["CHQ"],
+      "topics": ["meshcore/CHQ/+/packets", "meshcore/CHQ/#"]
+    },
+    {
+      "name": "mqtt_jsh",
+      "broker": "mqtt://localhost:1883",
+      "region": "JSH",
+      "iataFilter": ["JSH"],
+      "topics": ["meshcore/JSH/+/packets", "meshcore/JSH/#"]
     }
-  ]
+  ],
+  "branding": {
+    "siteName": "MeshCore Greece",
+    "tagline": "Greek LoRa Mesh Network Monitor",
+    "logoUrl": null,
+    "faviconUrl": null
+  },
+  "home": {
+    "heroTitle": "MeshCore Greece",
+    "heroSubtitle": "Καλωσήρθες στο ελληνικό LoRa mesh δίκτυο",
+    "heroCta": [
+      {
+        "label": "🇬🇷 Join our Discord",
+        "url": "https://discord.gg/WYYKwrbDBr",
+        "primary": true
+      }
+    ],
+    "steps": [
+      {
+        "emoji": "🌐",
+        "title": "Συνδέσου",
+        "description": "Μπες στο Discord για βοήθεια και ενημερώσεις"
+      },
+      {
+        "emoji": "🔍",
+        "title": "Παρακολούθησε",
+        "description": "Δες τα packets σε πραγματικό χρόνο"
+      },
+      {
+        "emoji": "📊",
+        "title": "Ανάλυσε",
+        "description": "Κατανόησε την υγεία του δικτύου σου"
+      }
+    ],
+    "checklist": [
+      {
+        "question": "Πώς συνδέω τον κόμβο μου;",
+        "answer": "Αναζήτησε το όνομα του κόμβου σου ή επικόλλησε το public key σου."
+      },
+      {
+        "question": "Χρειάζομαι βοήθεια;",
+        "answer": "Μπες στο Discord: https://discord.gg/WYYKwrbDBr"
+      }
+    ],
+    "footerLinks": [
+      {
+        "label": "📦 Packets",
+        "url": "#/packets"
+      },
+      {
+        "label": "🗺️ Map",
+        "url": "#/map"
+      },
+      {
+        "label": "🔴 Live",
+        "url": "#/live"
+      },
+      {
+        "label": "💬 Discord",
+        "url": "https://discord.gg/WYYKwrbDBr"
+      }
+    ]
+  }
 }
